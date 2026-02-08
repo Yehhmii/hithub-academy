@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Programs", href: "/programs", hasDropdown: true },
-  { label: "Blogs", href: "/blogs" },
+  { label: "News", href: "/news" },
   { label: "Admissions", href: "/admissions" },
   { label: "Contact Us", href: "/contact" },
 ];
