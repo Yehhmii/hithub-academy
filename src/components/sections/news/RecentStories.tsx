@@ -97,14 +97,16 @@ export default function RecentStories() {
                             <div className="h-full w-full bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col">
                                 {/* Image */}
                                 <div className="relative h-48 overflow-hidden">
+                                    {/* Fallback gradient */}
+                                    <div className="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-400" />
+
                                     <div
                                         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                                         style={{
                                             backgroundImage: `url(${article.image})`,
                                         }}
                                     />
-                                    {/* Fallback gradient */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-400" />
+
 
                                     {/* Category Badge */}
                                     <div className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-blue-600">

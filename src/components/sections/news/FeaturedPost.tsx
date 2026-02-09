@@ -18,14 +18,16 @@ export default function FeaturedPost() {
                 <div className="relative w-full overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 to-blue-800 shadow-2xl hover:shadow-3xl transition-all duration-500">
                     {/* Background Image */}
                     <div className="relative h-[400px] md:h-[500px]">
+                        {/* Fallback gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 to-blue-800/80" />
+
                         <div
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                             style={{
                                 backgroundImage: "url(/news/library-construction.jpg)",
                             }}
                         />
-                        {/* Fallback gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 to-blue-800/80" />
+
 
                         {/* Pattern Overlay */}
                         <div className="absolute inset-0 opacity-10">
